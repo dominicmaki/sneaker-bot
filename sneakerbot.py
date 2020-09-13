@@ -49,7 +49,7 @@ def get_login_info():
     return username, user_password
 
 
-def set_up(product_url):
+def search_nike(product_url):
     """options = Options()
     options.headless = True
     driver = webdriver.Chrome(options=options)"""
@@ -114,7 +114,7 @@ def main():
     time.sleep(5)
 
     try:
-        driver = set_up(product_url)
+        driver = search_nike(product_url)
     except:
         print("Could not go to given URL, check if URL was correct")
 
